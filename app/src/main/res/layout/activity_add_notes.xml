@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addNotes">
+
+    <EditText
+        android:id="@+id/editTextTextTitle"
+        android:layout_width="281dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#0099ff"
+        android:drawableLeft="@drawable/ic_baseline_short_text_24"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:textColorHint="#0099ff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPreacher"
+        android:layout_width="281dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#0099ff"
+        android:drawableLeft="@drawable/ic_baseline_short_text_24"
+        android:ems="10"
+        android:hint="Preacher"
+        android:inputType="textPersonName"
+        android:textColorHint="#0099ff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextTitle" />
+
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine4"
+        android:layout_width="281dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#0099ff"
+        android:drawableLeft="@drawable/ic_baseline_short_text_24"
+        android:ems="10"
+        android:hint="sermon"
+        android:inputType="textMultiLine"
+        android:textColorHint="#0099ff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPreacher" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab6"
+        android:layout_width="71dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#0099ff"
+        android:contentDescription="create notes"
+        android:src="@drawable/ic_baseline_send_24"
+        android:tooltipText="create Notes"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
